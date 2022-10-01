@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type = "text/javascript" src="static/js/navbar.js"></script>
+    <!-- <script type = "text/javascript" src="static/js/index.js"></script> -->
+  </head>
+  <body>
+    <div id="fh5co-page">
+        <!-- <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a> -->
+        <nav role="navigation"></nav>
+        <div id="fh5co-main">
+            <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Book Your Ticket</h2>
+            <form id="ticketForm" onsubmit="return book();">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required/>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required/>
+
+                <label for="sourcePlace">Source</label>
+                <input type="text" name="sourcePlace" id="sourcePlace" required/>
+
+                <label for="destinationPlace">Destination</label>
+                <input type="text" name="destinationPlace" id="destinationPlace" required/>
+
+                <label for="noOfPassengers">No Of Passengers</label>
+                <input type="text" name="noOfPassengers" id="noOfPassengers" required>
+
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" required/>
+
+                <label for="departureTime">Time</label>
+                <input type="time" name="departureTime" id="departureTime" required>
+
+                <input type="submit" value="Go!" id="submitButton"/>
+            </form>
+            <div id="snackbar"></div>
+            <script type = "text/javascript" src="static/js/main.js"></script>
+        </div>
+    </div>
+  </body>
+</html>

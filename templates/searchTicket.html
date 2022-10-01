@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- <link rel="stylesheet" href="static/css/ticket.css"> -->
+    <script type = "text/javascript" src="static/js/navbar.js"></script>
+    <!-- <script type = "text/javascript" src="static/js/index.js"></script> -->
+  </head>
+  <body>
+    <div id="fh5co-page">
+        <!-- <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a> -->
+        <nav role="navigation"></nav>
+        <div id="fh5co-main">
+            <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Search Your Ticket</h2>
+            <form id="ticketForm" method="post" onsubmit="return searchTicketByPNR();">
+                
+                <label for="pnrNumber">Search Ticket By PNR Number</label>
+                <input type="text" name="pnrNumber" id="pnrNumber" placeholder="Enter last 4 digit of your PNR" required>
+
+                <input type="submit" value="Search" id="submitButton"/>
+            </form>
+        </div>
+        <div id="fh5co-main" >
+          <h1 style="text-align: center;">Your Ticket Details</h1>
+          <table id="ticketTable">
+            <tr>
+              <th>Passenger Name</th>
+              <td></td>
+              <th>Email Id</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Total Passenger(s)</th>
+              <td></td>
+              <th>Departure Date</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>From Place</th>
+              <td></td>
+              <th>To Place</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Departure Time</th>
+              <td></td>
+              <th>Your PNR Numbers</th>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div id="snackbar"></div>
+        <script type = "text/javascript" src="static/js/main.js"></script>
+        </div>
+    </div>
+  </body>
+</html>
