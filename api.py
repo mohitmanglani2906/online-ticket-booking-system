@@ -57,6 +57,10 @@ def searchTicketByPNR():
         res = make_response({"message": "not success!"}, 500)
         return res
 
+@app.route('/show-analytics')
+def showAnalytics():
+    return render_template('analytics.html')
+
 
 @app.route('/cancel-ticket')
 def cancelTicketView():
